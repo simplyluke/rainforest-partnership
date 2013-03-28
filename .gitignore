@@ -1,0 +1,7 @@
+configuration.php
+administrator/*
+bin/*
+cache/*
+images/*
+tmp/*
+logs/*
