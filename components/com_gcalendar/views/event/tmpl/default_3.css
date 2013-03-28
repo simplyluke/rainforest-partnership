@@ -1,0 +1,54 @@
+.gcal-event-list {
+	width: 100%;
+	border: 0px;
+}
+
+.gcal-event-list tr,.gcal-event-list td {
+	border: 0px;
+}
+
+.gcal-event-list td {
+	padding-bottom: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+.gcal-event-list .label {
+	width: 100px;
+	font-weight: bold;
+}
+
+.event_content_key {
+	font-weight: bold;
+}
+
+#gcal-event-container {
+	padding-right: 5px;
+}
+
+#gcal-event-container h2 {
+	border-bottom: 2px solid #DDDDDD;
+	clear: both;
+	margin-top: 20px;
+}
+
+#content_table {
+	padding: 10px;
+	width: 100%;
+}
+
+#content_table tr,#content_table td {
+	border: 0px;
+}
+
+#content_table td {
+	vertical-align: top;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+
+.event_content_key {
+	font-weight: bold;
+	width: 30px;
+}

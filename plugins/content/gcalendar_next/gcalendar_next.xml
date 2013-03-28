@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_gcalendar_next</name>
+	<author>G4J Project</author>
+	<authorEmail>info@digital-peak.com</authorEmail>
+	<creationDate>Feb 2013</creationDate>
+	<copyright>This extension is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorUrl>g4j.digital-peak.com</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_GCALENDAR_NEXT_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="gcalendar_next">gcalendar_next.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<config>
+		<fields name="params"
+			addfieldpath="/administrator/components/com_gcalendar/models/fields">
+			<fieldset name="basic">
+				<field name="calendarids" type="gcalendar" multiple="true"
+					default="" label="PLG_GCALENDAR_NEXT_FIELD_CALENDAR_IDS_LABEL"
+					description="PLG_GCALENDAR_NEXT_FIELD_CALENDAR_IDS_DESC" />
+				>
+				<field name="find" type="text" size="40" default=""
+					label="PLG_GCALENDAR_NEXT_FIELD_FIND_LABEL" description="PLG_GCALENDAR_NEXT_FIELD_FIND_DESC" />
+				<field name="max_events" type="text" size="40" default="2"
+					label="PLG_GCALENDAR_NEXT_FIELD_MAX_LABEL" description="PLG_GCALENDAR_NEXT_FIELD_MAX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
