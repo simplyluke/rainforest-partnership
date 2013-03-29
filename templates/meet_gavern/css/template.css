@@ -386,10 +386,11 @@ footer .gk-copyrigths { color:#aaa; }
   background:transparent !important;
   color:#5990de !important;
 }
+
 .gk-main-menu ul ul {
   background:#fff;
   display:block;
-  font-size:13px;
+  font-size:16px;
   left:-9999px;
   margin-top:-3px;
   padding:0 !important;
