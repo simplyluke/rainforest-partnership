@@ -3,6 +3,8 @@ body {
   font-size:13px;
   font-weight:normal;
   line-height:24px;
+  background-color: #fff;
+  background-image:url('../images/wavegrid.png');
 }
 a {
   color:#017337;
@@ -17,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:400;
 }
 
+.container-fluid{
+	background-color: #fff;
+}
 
 .row { clear:both; }
 .row:after {
@@ -83,7 +88,9 @@ body > header + section#gk-main:before {
   padding-top:45px;
   width:100%;
 }
-#gk-content { padding-bottom:20px; }
+#gk-content { 
+  padding-bottom:20px; 
+}
 #gk-bottom {
   border-top:1px solid #e5e5e5;
   margin:30px 0;

@@ -61,7 +61,7 @@ if ($this->API->modules('sidebar')) {
 		<jdoc:include type="message" />
 	</div>
 	<?php endif; ?>
-
+	<div class="container-fluid">
 	<header class="container-fluid">
 		<?php $this->layout->loadBlock('logo'); ?>
 		
@@ -145,6 +145,7 @@ if ($this->API->modules('sidebar')) {
 			<?php endif; ?>
 		</section>
 	</section>
+	</div>
 	
 	<footer class="container-fluid">
 		<?php if($this->API->modules('footer')) : ?>
