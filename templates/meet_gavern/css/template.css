@@ -391,7 +391,7 @@ footer .gk-copyrigths { color:#aaa; }
 }
 .gk-main-menu > ul > li.active li.current > a, .gk-main-menu > ul > li.active li.active > a, .gk-main-menu > ul > li:hover li.current > a, .gk-main-menu > ul > li:hover li.active > a {
   background:transparent !important;
-  color:#5990de !important;
+  color:#d1e397 !important;
 }
 
 .gk-main-menu ul ul {
