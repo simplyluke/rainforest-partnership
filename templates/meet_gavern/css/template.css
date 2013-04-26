@@ -10,6 +10,11 @@ a {
   color:#017337;
   outline:none !important;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 a:active, a:focus, a:hover {
   color:#d1e397;
   text-decoration:none;
@@ -18,10 +23,30 @@ h1, h2, h3, h4, h5, h6 {
   color:#444;
   font-weight:400;
 }
-
+/* A few custom tweaks*/
 .container-fluid{
 	background-color: #fff;
 }
+
+.mainDonateSubmit {
+	width: 200px;
+	height: 40px;
+	font-size: 1.3em;
+	font-weight: bold; 
+	border-radius: 1px;
+	background-color: #8f8f8f;
+	border: none;
+	color: #fff;
+}
+
+#donationAmount {
+	width: 200px;
+	font-size: 1.3em;
+	height: 40px;
+	margin: 16px 0px;
+}
+
+/* End Tweaks*/
 
 .row { clear:both; }
 .row:after {
