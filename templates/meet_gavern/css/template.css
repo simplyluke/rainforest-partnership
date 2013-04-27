@@ -28,15 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #fff;
 }
 
-.mainDonateSubmit {
-	width: 200px;
-	height: 40px;
-	font-size: 1.3em;
-	font-weight: bold; 
-	border-radius: 1px;
-	background-color: #8f8f8f;
-	border: none;
-	color: #fff;
+.article-header-image{
+  position:relative;
 }
 
 .hero-caption {
@@ -50,11 +43,43 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .4;
 }
 
+.hero-caption h1, h2, h3, h4, h5, h6, p {
+  opacity: 1.0;
+  font-weight: bold;
+}
+
+.mainDonateSubmit {
+	width: 200px;
+	height: 40px;
+	font-size: 1.3em;
+	font-weight: bold; 
+	border-radius: 1px;
+	background-color: #8f8f8f;
+	border: none;
+	color: #fff;
+}
+
 #donationAmount {
 	width: 200px;
 	font-size: 1.3em;
 	height: 40px;
 	margin: 16px 0px;
+}
+
+.project-content img {
+  width: 20%;
+  float: right;
+  position: relative;
+  padding-left: 15px;
+}
+
+.project-content {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  
 }
 
 /* End Tweaks*/
