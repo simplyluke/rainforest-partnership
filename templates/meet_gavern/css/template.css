@@ -516,7 +516,7 @@ body > .container-fluid.gk-message .alert { margin:15px 0; }
 .gk-article {
   font-size:14px;
   line-height:26px !important;
-  margin:0 0 56px 116px;
+  margin:0 116px 56px 116px;
 }
 .item-page .item-page { min-height:400px; }
 .item-page time {
