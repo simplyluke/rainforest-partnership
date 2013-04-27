@@ -39,6 +39,17 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.hero-caption {
+  position: absolute; 
+  background-color: white; 
+  border-radius: 3px; 
+  left: 20px; 
+  width: 400px; 
+  bottom: 10px; 
+  padding: 20px; 
+  opacity: .4;
+}
+
 #donationAmount {
 	width: 200px;
 	font-size: 1.3em;
