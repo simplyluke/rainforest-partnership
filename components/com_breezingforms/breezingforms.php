@@ -473,7 +473,7 @@ if(
 				if(trim($form->template_code_processed) == ''){
 					echo "</div>\n";
 				}
-                                if(trim($form->template_code_processed) == 'QuickMode') echo '<br/><br/><div align="center"><a href="http://crosstec.de/en/extensions/joomla-forms-download.html" target="_blank">Joomla!&reg; Forms Download</a></div>';
+                                if(trim($form->template_code_processed) == 'QuickMode') echo '';
 				if (!$plainform) echo "</div>\n";
 
 				if ($runmode==_FF_RUNMODE_PREVIEW) {
