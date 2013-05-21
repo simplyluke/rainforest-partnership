@@ -61,7 +61,7 @@ while($this->API->get('font_name_group'.$font_iter, 'gkFontNull') !== 'gkFontNul
 	$font_iter++;
 }
 // include JavaScript
-$this->API->addJS('//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
+$this->API->addJS('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
 $this->API->addJS($this->API->URLtemplate().'/js/bootstrap.js');
 
 // load prefixer
