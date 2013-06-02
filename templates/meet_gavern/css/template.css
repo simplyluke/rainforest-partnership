@@ -114,10 +114,23 @@ body > header #mod-search-searchword {
 #gk-logo.css-logo {
   background:url('../images/logo.png') no-repeat 0 0;
   display:block;
-  height:81px;
+  height:80px;
   text-indent:-9999px;
-  width:300px;
+  width:518px;
   margin:0;
+  padding-bottom: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1250px) {
+  #gk-logo.css-logo {
+  background:url('../images/logo-small.png') no-repeat 0 0;
+  display: block;
+  width: 292px;
+  height: 45px;
+  text-indent: -9999pc;
+  margin: 0;
+  }
 }
 #gk-logo.text-logo span {
   display:block;

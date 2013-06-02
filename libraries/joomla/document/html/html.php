@@ -3,7 +3,7 @@
  * @package     Joomla.Platform
  * @subpackage  Document
  *
- * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -511,18 +511,18 @@ class JDocumentHTML extends JDocument
 
 		if (!isset($children))
 		{
-			$dbo = JFactory::getDbo();
+			$db = JFactory::getDbo();
 			$app = JFactory::getApplication();
 			$menu = $app->getMenu();
 			$active = $menu->getActive();
 			if ($active)
 			{
-				$query = $dbo->getQuery(true);
-				$query->select('COUNT(*)');
-				$query->from('#__menu');
-				$query->where('parent_id = ' . $active->id);
-				$query->where('published = 1');
-				$children = $dbo->loadResult();
+				$query = $db->getQuery(true)
+					->select('COUNT(*)')
+					->from('#__menu')
+					->where('parent_id = ' . $active->id)
+					->where('published = 1');
+				$children = $db->loadResult();
 			}
 			else
 			{

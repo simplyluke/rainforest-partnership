@@ -3,7 +3,7 @@
  * @package     Joomla.Legacy
  * @subpackage  HTML
  *
- * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -43,14 +43,14 @@ abstract class JHtmlContentLanguage
 		if (empty(self::$items))
 		{
 			// Get the database object and a new query object.
-			$db		= JFactory::getDBO();
+			$db		= JFactory::getDbo();
 			$query	= $db->getQuery(true);
 
 			// Build the query.
-			$query->select('a.lang_code AS value, a.title AS text, a.title_native');
-			$query->from('#__languages AS a');
-			$query->where('a.published >= 0');
-			$query->order('a.title');
+			$query->select('a.lang_code AS value, a.title AS text, a.title_native')
+				->from('#__languages AS a')
+				->where('a.published >= 0')
+				->order('a.title');
 
 			// Set the query and load the options.
 			$db->setQuery($query);
