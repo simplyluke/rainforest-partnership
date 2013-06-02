@@ -3,7 +3,7 @@
  * @package     Joomla.Platform
  * @subpackage  Database
  *
- * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -117,18 +117,18 @@ abstract class JDatabase
 	/**
 	 * Splits a string of multiple queries into an array of individual queries.
 	 *
-	 * @param   string  $sql  Input SQL string with which to split into individual queries.
+	 * @param   string  $query  Input SQL string with which to split into individual queries.
 	 *
 	 * @return  array  The queries from the input string separated into an array.
 	 *
 	 * @since   11.1
 	 * @deprecated  13.1
 	 */
-	public static function splitSql($sql)
+	public static function splitSql($query)
 	{
 		JLog::add('JDatabase::splitSql() is deprecated, use JDatabaseDriver::splitSql() instead.', JLog::WARNING, 'deprecated');
 
-		return JDatabaseDriver::splitSql($sql);
+		return JDatabaseDriver::splitSql($query);
 	}
 
 	/**

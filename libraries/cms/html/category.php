@@ -3,7 +3,7 @@
  * @package     Joomla.Libraries
  * @subpackage  HTML
  *
- * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -45,11 +45,10 @@ abstract class JHtmlCategory
 		{
 			$config = (array) $config;
 			$db = JFactory::getDbo();
-			$query = $db->getQuery(true);
-
-			$query->select('a.id, a.title, a.level');
-			$query->from('#__categories AS a');
-			$query->where('a.parent_id > 0');
+			$query = $db->getQuery(true)
+				->select('a.id, a.title, a.level')
+				->from('#__categories AS a')
+				->where('a.parent_id > 0');
 
 			// Filter on extension.
 			$query->where('extension = ' . $db->quote($extension));
@@ -65,6 +64,23 @@ abstract class JHtmlCategory
 				{
 					JArrayHelper::toInteger($config['filter.published']);
 					$query->where('a.published IN (' . implode(',', $config['filter.published']) . ')');
+				}
+			}
+
+			// Filter on the language
+			if (isset($config['filter.language']))
+			{
+				if (is_string($config['filter.language']))
+				{
+					$query->where('a.language = ' . $db->quote($config['filter.language']));
+				}
+				elseif (is_array($config['filter.language']))
+				{
+					foreach ($config['filter.language'] as &$language)
+					{
+						$language = $db->quote($language);
+					}
+					$query->where('a.language IN (' . implode(',', $config['filter.language']) . ')');
 				}
 			}
 
@@ -105,11 +121,10 @@ abstract class JHtmlCategory
 		{
 			$config = (array) $config;
 			$db = JFactory::getDbo();
-			$query = $db->getQuery(true);
-
-			$query->select('a.id, a.title, a.level, a.parent_id');
-			$query->from('#__categories AS a');
-			$query->where('a.parent_id > 0');
+			$query = $db->getQuery(true)
+				->select('a.id, a.title, a.level, a.parent_id')
+				->from('#__categories AS a')
+				->where('a.parent_id > 0');
 
 			// Filter on extension.
 			$query->where('extension = ' . $db->quote($extension));
