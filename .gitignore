@@ -5,3 +5,6 @@ cache/*
 images/*
 tmp/*
 logs/*
+error_log
+php.ini
+robots.txt
