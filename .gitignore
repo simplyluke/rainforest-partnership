@@ -8,3 +8,4 @@ logs/*
 error_log
 php.ini
 robots.txt
+.DS_Store
