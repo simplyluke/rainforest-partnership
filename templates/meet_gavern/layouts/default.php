@@ -49,6 +49,7 @@ if ($this->API->modules('sidebar')) {
 	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
 	<?php endif; ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
 	
 	<jdoc:include type="head" />
 	<?php $this->layout->loadBlock('head'); ?>
