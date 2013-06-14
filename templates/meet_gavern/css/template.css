@@ -134,6 +134,7 @@ body > header #mod-search-searchword {
   height: 45px;
   text-indent: -9999pc;
   margin: 0;
+  margin-top: 5px;
   }
 }
 #gk-logo.text-logo span {
