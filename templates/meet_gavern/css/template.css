@@ -141,6 +141,18 @@ body > header #mod-search-searchword {
   margin-top: 5px;
   }
 }
+
+@media (max-width: 320px){
+  #gk-logo.css-logo {
+  background:url('../images/logo-tiny.png') no-repeat 0 0;
+  display: block;
+  width: 240px;
+  height: 37px;
+  text-indent: -9999pc;
+  margin: 0;
+  margin-top: 5px;
+  }
+}
 #gk-logo.text-logo span {
   display:block;
   font-size:24px;
