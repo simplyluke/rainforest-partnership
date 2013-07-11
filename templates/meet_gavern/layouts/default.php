@@ -44,8 +44,6 @@ if ($this->API->modules('sidebar')) {
 <head>
 	<?php if($this->browser->get('browser') == 'ie8' || $this->browser->get('browser') == 'ie7' || $this->browser->get('browser') == 'ie6') : ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=9">
-	<meta name="description" content="We partner with forest communities to help them make an income that allows them to protect their rainforests.">
-	<meta name="keywords" content="rainforest, forest, nonprofit, ngo, austin, atx, coffee, conservation, rainforest peoples, the rainforest, south america, environment, deforestation, rain forest, rainforest animals, animals, wildlife, a rainforest, equador, peru">
 	<?php endif; ?>
 	<?php if($this->API->get("chrome_frame_support", '0') == '1' && ($this->browser->get('browser') == 'ie8' || $this->browser->get('browser') == 'ie7' || $this->browser->get('browser') == 'ie6')) : ?>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
