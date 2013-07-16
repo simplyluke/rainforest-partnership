@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+.sponsors li {
+  line-height: 1.5em;
+  border-bottom: 1px solid gray;
+}
+
 /* End Tweaks*/
 
 .row { clear:both; }
